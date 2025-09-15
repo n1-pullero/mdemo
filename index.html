@@ -19,12 +19,7 @@ body {
 }
 
 #canvas {
-	position: absolute;
-	width: 960px;
-	height: 720px;
-	left: 50%;
-	top: 50%;
-	translate: -50% -50%;
+	display: block;
 }
 
 #canvas:focus {
@@ -98,7 +93,7 @@ body {
 		
 	</head>
 	<body>
-		<canvas width="960" height="720" id="canvas">
+		<canvas id="canvas">
 			Your browser does not support the canvas tag.
 		</canvas>
 
@@ -107,14 +102,14 @@ body {
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" class="show-image--false fullsize--true use-filter--false" src="demo.png" alt="">
+			<img id="status-splash" class="show-image--false fullsize--true use-filter--false" src="index.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
-		<script src="demo.js"></script>
+		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":0,"ensureCrossOriginIsolationHeaders":true,"executable":"demo","experimentalVK":false,"fileSizes":{"demo.pck":22015440,"demo.wasm":43699190},"focusCanvas":false,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":0,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":29225168,"index.wasm":43699190},"focusCanvas":false,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
